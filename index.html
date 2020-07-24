@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        .container {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         } 
+        .center{
+            box-shadow: 1px 1px 3px grey;
+            width: 500px;
+            
+        }
+        .container .main{
+            margin: 10px 0px;
+            margin-left: 10px;
+        }
+        input{
+            height: 20px;
+            width: 150px;
+           
+        }
+        
+         .liClass {
+            list-style: none;
+      
+        } 
+        .List ul{
+            list-style: none;
+            text-align: center;
+            
+        }
+        .List ul p{
+            font-size: large;
+           margin-left: -30px;
+        }
+        .liClass button{
+            margin-left: 20px; 
+            width: 70px;
+            height: 25px;
+            border-width: 0;
+            
+        }
+        .button1{
+            background-color: grey;
+            border-width: 0;
+            font-size: 13px;
+            color: white;
+            width: 70px;
+            height: 25px;
+        }
+        .List ul li{
+            margin-top: 15px;
+        }
+       
+      
+        
+    </style> 
+</head>
+<body>
+
+         <div class="container">
+           
+                    <div class="center">
+                        <input placeholder="Enter Todo" id="todo_value" class="main" type="text">
+                        <button onclick="addTodo()" class="button1" class="main">Add Item</button>
+                        <button onclick="DeleteAll()" class="button1" class="main">Delete All</button>
+                    </div>
+                   
+               
+            </div>
+        </div>
+            
+
+
+    <div class="container">
+       
+                <div class="center">
+                    <div class="List">
+                        <ul id="list">
+                            <p>Add Tasks</p>
+                    
+                        </ul>
+                    </div>
+                </div>
+               
+            
+        </div>
+  
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
